@@ -2,12 +2,15 @@
 #include <math.h>
 
 int exponencial (int x, int y){
-    int expo=0;
-
-    for(int i=0; i<=y; i++){
-        expo= expo +(x*i);
+    int expo=x;
+    if(y==0){
+        expo=1;
+        return expo;
+    }else{
+        for(int i=2; i<=y; i++){
+            expo= expo*x;
+        }
     }
-    
     return expo;
 }
 
@@ -28,14 +31,14 @@ int main()
     int base;
     int potencia;
     int sumGeo;
- printf("ingrese el numero base: ");
+ printf("Ingrese el numero base: ");
  scanf("%d",&base);
- printf("ingrese el numero 'n' hasta el que llegará la potencia: ");
+ printf("Ingrese el numero 'n' hasta el que llegará la potencia: ");
  scanf("%d",&potencia);
- printf("el la base: %d , y la potencia: %d",base,potencia);
+ printf("La base: %d , y la potencia: %d",base,potencia);
 
  sumGeo= sumaGeometrica(base,potencia);
+
  printf("\n La Suma Geometrica es: %d\n",sumGeo);
   return 0;
 }
-
