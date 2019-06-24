@@ -2,7 +2,7 @@
 int main ()
 {
     int x;
-    printf("ingrese número final (iniciando desde 1):");
+    printf("ingrese numero final (iniciando desde 1):");
     scanf("%d",&x);
 
     int N = x;
@@ -17,7 +17,9 @@ int main ()
             printf ("%dx%d= %d " ,j , i, mul);
             j++;
         }
+        j=1;        
         i++;
+        printf("\n");
     }
     return 0;
 }
