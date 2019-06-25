@@ -1,0 +1,5 @@
+a. Compile y ejecute el código fuente anteriormente mostrado.
+ ¿Qué es lo que hacen las funciones srand() y rand()? 
+ srand nos permite inicializar una semilla la cual puede ser creada a partir de la fecha y hora 
+ del sistema srand (time(NULL)); o partir del numero del proceso que se está ejecutando actualmente 
+ mediante srand (getpid());
